@@ -216,3 +216,12 @@ bundle exec rspec
 
 ### Como enviar seu projeto
 Salve seu código em um versionador de código (GitHub, GitLab, Bitbucket) e nos envie o link publico. Se achar necessário, informe no README as instruções para execução ou qualquer outra informação relevante para correção/entendimento da sua solução.
+
+### Como Testar
+Eu criei o projeto e testei principalmente com o Docker Compose, você pode testar apenas utilizando:
+```bash
+docker-compose build
+docker-compose run web bundle exec rspec # Para rodar os testes
+docker-compose run web bundle exec rails s # Para rodar o servidor
+```
+Optei por não utilizar nenhuma outra gem para evitar novas dependencias, e também foquei em realizar o projeto de maneira otimizada e limpa.
